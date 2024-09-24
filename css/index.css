@@ -1,0 +1,212 @@
+:root {
+    --cor-primaria: #070705;
+    --cor-secundaria: #ffffff;
+    --cor-terciaria: #5816adc4;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    color: var(--cor-secundaria);
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.video-background {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    overflow: hidden;
+}
+
+video {
+    max-width: 100%;
+    max-height: 100%;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: -1;
+    object-fit: cover; 
+}
+
+
+
+header {
+    background-color: rgba(14, 14, 14, 0.8);
+    padding: 16px;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    position: fixed;
+}
+
+.navbar {
+    display: flex;
+    justify-content: center;
+}
+
+
+.navbar__link {
+    color: var(--cor-secundaria);
+    text-decoration: none;
+    /*1) Adaptando o corpo do texto para unidades relativas*/
+    font-size: 1.125rem;
+    /*1) Adaptando o corpo do texto para unidades relativas*/
+    margin: 0 15px;
+    padding: 8px 16px;
+    transition: color 0.3s ease;
+}
+
+.navbar__link:hover,
+.navbar__link.active {
+    color: #4c00ff;
+    border-bottom: 2px solid var(--cor-terciaria);
+}
+
+.apresentacao {
+    margin-top: 100px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: calc(100vh - 160px);
+    gap: 82px; /*1) Ajustando o layout para telas menores*/
+}
+
+.box-superior {
+    background: rgba(32, 0, 61, 0.2);
+    border-radius: 15px;
+    padding: 50px;
+    backdrop-filter: blur(8px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+.box-inferior {
+    background: rgba(32, 0, 61, 0.2);
+    border-radius: 15px;
+    padding: 30px;
+    backdrop-filter: blur(8px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+    margin-top: 20px;
+    width: 100%;
+    max-width: 700px;
+}
+
+h1, h2 {
+    color: var(--cor-terciaria);
+}
+
+.apresentacao__links {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 32px;
+}
+
+.apresentacao__links__subtitulo {
+    /*1) Adaptando o corpo do texto para unidades relativas*/
+    font-size: 1.5rem;
+    color: var(--cor-terciaria);
+}
+
+.apresentacao__links__link {
+    background-color: #333;
+    color: var(--cor-secundaria);
+    border: 2px solid #555;
+    width: 308px;
+    border-radius: 16px;
+    padding: 10px;
+    text-align: center;
+    text-decoration: none;
+    transition: background-color 0.3s ease, color 0.3s ease, border-color 0.3s ease;
+}
+
+.apresentacao__links__link:hover {
+    background-color: #272727;
+    border-color: var(--cor-terciaria);
+}
+
+img.logo {
+    width: 180px;
+    height: 180px;
+    border-radius: 50%;
+    border: 6px solid var(--cor-terciaria);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+    object-fit: cover;
+    margin: 20px;
+}
+
+footer {
+    background-color: #6400a738;
+    padding: 1rem;
+    text-align: center;
+    color: #ffffff;
+    width: 100%;
+}
+
+footer .social-media a {
+    margin: 0 0.5rem;
+    color: #ffffff;
+    transition: color 0.3s ease;
+}
+
+footer .social-media a:hover {
+    color: #aa00ff;
+}
+
+footer .social-media img {
+    width: 24px;
+    height: 24px;
+    vertical-align: middle;
+}
+
+.social-icons {
+    margin-top: 10px;
+}
+
+.social-icons img {
+    width: 32px;
+    margin: 0 10px;
+    transition: transform 0.3s;
+}
+
+.social-icons img:hover {
+    transform: scale(1.1);
+}
+
+
+@media (max-width: 1200px){
+    header{
+        padding: 1%;
+    }/*4) Ajustando o cabeçalho para telas menores*/
+
+    .apresentacao{
+        flex-direction: column; /*3) Refinando o layout responsivo*/
+        padding: 5%; /*1) Ajustando o espaçamento para telas menores*/
+    }
+
+    .box-superior{
+        padding: 5%;
+    }
+
+    .box-inferior{
+        padding: 5%;
+    }
+    
+} /*2) Implementando media queries para mudança de layout/*
+
