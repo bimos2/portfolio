@@ -2,11 +2,12 @@
 <html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
-    <link rel="icon" href="./assets/Imagem.jpg" type="Imagem/jpg">
+    <link rel="icon" href="./assets/Imagem.jpg" type="image/jpg">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>PORTFÓLIO | BEATRIZ</title>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./css/index.css">
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
 </head>
 <body>
     <div class="video-background">
@@ -15,14 +16,27 @@
         </video>
     </div>
 
-    <header>
-        <nav class="navbar">
-            <a href="./index.html" class="navbar__link active">Home</a>
-            <a href="./about.html" class="navbar__link">Sobre mim</a>
-            <a href="./curriculo.html" class="navbar__link">Currículo</a>
-            <a href="./projects.html" class="navbar__link">Projects</a>
-            <a href="./contact.html" class="navbar__link">Contato</a>
-        </nav>
+    <!-- Navbar -->
+    <header class="header">
+        <div class="logo-container">
+            <img class="small-logo" src="./assets/Imagem.jpg" alt="Logo">
+        </div>
+        <div class="container">
+            <button class="navbar-toggler" id="toggleButton" aria-label="Toggle navigation">
+                <span class="hamburguer"></span>
+                <span class="hamburguer"></span>
+                <span class="hamburguer"></span>
+            </button>
+            <nav class="navbar" id="navbarNav">
+                <ul class="nav-list">
+                    <li class="nav-item"><a href="./index.html" class="nav-link active">Home</a></li>
+                    <li class="nav-item"><a href="./about.html" class="nav-link">Sobre mim</a></li>
+                    <li class="nav-item"><a href="./curriculo.html" class="nav-link">Curriculo</a></li>
+                    <li class="nav-item"><a href="./projects.html" class="nav-link">Projects</a></li>
+                    <li class="nav-item"><a href="./contact.html" class="nav-link">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
     </header>
 
     <main class="apresentacao">
@@ -42,19 +56,20 @@
     </main>
 
     <footer class="rodape">
-        
         <div class="social-icons">
             <a href="https://github.com/bimos2">
-                <img src="./assets/github.png" alt="bimos2">
+                <img src="./assets/github.png" alt="GitHub">
             </a>
             <a href="https://linkedin.com/in/seunome">
                 <img src="./assets/linkedin.png" alt="LinkedIn">
             </a>
             <a href="https://twitch.tv/seunome">
-                <img src="./assets/instagram.png" alt="Twitch">
+                <img src="./assets/instagram.png" alt="Instagram">
             </a>
         </div>
         <p>&copy; 2024 Beatriz Candido de Matos</p>
     </footer>
+
+    <script src="./js/script.js"></script>
 </body>
 </html>

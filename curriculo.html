@@ -11,32 +11,45 @@
     <video autoplay loop muted>
         <source src="./video/loney.mp4" type="video/mp4">
     </video>
-    <header>
-        <nav class="navbar">
-            <a href="./index.html" class="navbar__link">Home</a>
-            <a href="./about.html" class="navbar__link">Sobre mim</a>
-            <a href="./curriculo.html" class="navbar__link active">Currículo</a>
-            <a href="./projects.html" class="navbar__link">Projects</a>
-            <a href="./contact.html" class="navbar__link">Contato</a>
-        </nav>
+    <header class="header">
+        <div class="logo-container">
+            <img class="small-logo" src="./assets/Imagem.jpg" alt="Logo">
+        </div>
+        <div class="container">
+            <button class="navbar-toggler" id="toggleButton" aria-label="Toggle navigation">
+                <span class="hamburguer"></span>
+                <span class="hamburguer"></span>
+                <span class="hamburguer"></span>
+            </button>
+            <nav class="navbar" id="navbarNav">
+                <ul class="nav-list">
+                    <li class="nav-item"><a href="./index.html" class="nav-link ">Home</a></li>
+                    <li class="nav-item"><a href="./about.html" class="nav-link">Sobre mim</a></li>
+                    <li class="nav-item"><a href="./curriculo.html" class="nav-link active">Curriculo</a></li>
+                    <li class="nav-item"><a href="./projects.html" class="nav-link">Projects</a></li>
+                    <li class="nav-item"><a href="./contact.html" class="nav-link">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
     </header>
+
     <main class="apresentacao">
         <section class="box-transparente">
             <h1 class="apresentacao__conteudo__titulo">Beatriz Candido</h1>
             <p class="apresentacao__conteudo__texto">Sou uma desenvolvedora web em busca de crescimento profissional.</p>
             <img src="./assets/perfil.jpg" alt="Foto de Perfil" class="apresentacao__img">
-            <h2 class="apresentacao__conteudo__subtitulo">Sobre Mim</h2>
+            <h2 class="apresentacao__conteudo__titulo">Sobre Mim</h2>
             <p class="apresentacao__conteudo__texto">
                 Sou estudante de Análise e Desenvolvimento de Sistemas, com um nível intermediário em Inglês.
                 No segundo ano do ensino médio, tenho certificado em Informática Básica e busco mais conhecimento e experiência.
             </p>
-            <h2 class="apresentacao__conteudo__subtitulo">Habilidades</h2>
+            <h2 class="apresentacao__conteudo__titulo">Habilidades</h2>
             <ul class="habilidades__lista">
-                <ol class="habilidades__item">HTML e CSS</ol>
-                <ol class="habilidades__item">Python</ol>
-                <ol class="habilidades__item">JavaScript</ol>
-                <ol class="habilidades__item">Informática</ol>
-                <ol class="habilidades__item">Inglês</ol>
+                <p class="habilidades__item">HTML e CSS</p>
+                <p class="habilidades__item">Python</p>
+                <p class="habilidades__item">JavaScript</p>
+                <p class="habilidades__item">Informática</p>
+                <p class="habilidades__item">Inglês</p>
             </ul>
         </section>
     </main>
@@ -54,5 +67,6 @@
         </div>
         <p>© 2024 Todos os direitos reservados.</p>
     </footer>
+    <script src="./js/script.js"></script>
 </body>
 </html>

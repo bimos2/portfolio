@@ -14,14 +14,26 @@
         </video>
     </div>
 
-    <header>
-        <nav class="navbar">
-            <a href="index.html" class="navbar__link">Home</a>
-            <a href="about.html" class="navbar__link active">Sobre mim</a>
-            <a href="curriculo.html" class="navbar__link">Currículo</a>
-            <a href="projects.html" class="navbar__link">Projects</a>
-            <a href="contact.html" class="navbar__link">Contato</a>
-        </nav>
+    <header class="header">
+        <div class="logo-container">
+            <img class="small-logo" src="./assets/Imagem.jpg" alt="Logo">
+        </div>
+        <div class="container">
+            <button class="navbar-toggler" id="toggleButton" aria-label="Toggle navigation">
+                <span class="hamburguer"></span>
+                <span class="hamburguer"></span>
+                <span class="hamburguer"></span>
+            </button>
+            <nav class="navbar" id="navbarNav">
+                <ul class="nav-list">
+                    <li class="nav-item"><a href="./index.html" class="nav-link">Home</a></li>
+                    <li class="nav-item"><a href="./about.html" class="nav-link active">Sobre mim</a></li>
+                    <li class="nav-item"><a href="./curriculo.html" class="nav-link">Curriculo</a></li>
+                    <li class="nav-item"><a href="./projects.html" class="nav-link">Projects</a></li>
+                    <li class="nav-item"><a href="./contact.html" class="nav-link">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
     </header>
 
     <main class="apresentacao">
@@ -54,5 +66,6 @@
         </div>
         <p>&copy; 2024 Beatriz Candido de Matos</p>
     </footer>
+    <script src="./js/script.js"></script>
 </body>
 </html>
