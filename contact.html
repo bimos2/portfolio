@@ -25,9 +25,9 @@
                 <ul class="nav-list">
                     <li class="nav-item"><a href="./index.html" class="nav-link ">Home</a></li>
                     <li class="nav-item"><a href="./about.html" class="nav-link">Sobre mim</a></li>
-                    <li class="nav-item"><a href="./curriculo.html" class="nav-link">Curriculo</a></li>
-                    <li class="nav-item"><a href="./projects.html" class="nav-link">Projects</a></li>
-                    <li class="nav-item"><a href="./contact.html" class="nav-link active">Contact</a></li>
+                    <li class="nav-item"><a href="./curriculo.html" class="nav-link">Currículo</a></li>
+                    <li class="nav-item"><a href="./projects.html" class="nav-link">Projetos</a></li>
+                    <li class="nav-item"><a href="./contact.html" class="nav-link active">Contato</a></li>
                 </ul>
             </nav>
         </div>
@@ -35,7 +35,7 @@
     <main class="contato">
         <section class="box-transparente">
             <h1 class="contato__titulo">Entre em Contato</h1>
-            <form class="contato__form">
+            <form id="contatoForm" class="contato__form">
                 <label for="nome">Nome:</label>
                 <input type="text" id="nome" name="nome" required>
 
@@ -58,11 +58,12 @@
                 <img src="./assets/linkedin.png" alt="LinkedIn">
             </a>
             <a href="https://twitch.tv/seunome">
-                <img src="./assets/instagram.png" alt="Twitch">
+                <img src="./assets/instagram.png" alt="Instagram">
             </a>
         </div>
         <p>© 2024 Todos os direitos reservados.</p>
     </footer>
     <script src="./js/script.js"></script>
+    <script src="./js/validar_form.js"></script>
 </body>
 </html>
